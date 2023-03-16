@@ -1,0 +1,33 @@
+standard
+***Report Model: qa1***
+
+IO Statistics
+#IO                        24
+  #input                   13
+  #output                  11
+  #inout                    0
+
+Gate Statistics
+#Basic gates               15
+  #and                      0
+  #nand                     0
+  #or                       0
+  #nor                      0
+  #xor                      0
+  #xnor                     0
+  #buf                      0
+  #not                      0
+  #bufif1                   4
+  #MX21                     0
+  #FADD                     0
+  #DFF                     11
+  #LATCH                    0
+#MACRO_MULT                 1
+#MACRO_MUX                  7
+
+Report Hierarchy Area:
++-----------------------------------------+
+|Instance |Module |gates  |seq    |macros |
++-----------------------------------------+
+|top      |qa1    |4      |11     |1      |
++-----------------------------------------+

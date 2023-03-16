@@ -1,0 +1,38 @@
+standard
+***Report Model: qa1***
+
+IO Statistics
+#IO                        24
+  #input                   13
+  #output                  11
+  #inout                    0
+
+LUT Statistics
+#Total_luts                 7
+  #lut4                     7
+  #lut5                     0
+  #lut6                     0
+  #lut5_mx41                0
+  #lut4_alu1b               0
+
+Utilization Statistics
+#lut                        7   out of  19600    0.04%
+#reg                        0   out of  19600    0.00%
+#le                         0
+#dsp                        1   out of     29    3.45%
+#bram                       0   out of     64    0.00%
+  #bram9k                   0
+  #fifo9k                   0
+#bram32k                    0   out of     16    0.00%
+#pad                       24   out of    188   12.77%
+  #ireg                     0
+  #oreg                     7
+  #treg                     0
+#pll                        0   out of      4    0.00%
+
+Report Hierarchy Area:
++---------------------------------------------------------+
+|Instance |Module |lut    |ripple |seq    |bram   |dsp    |
++---------------------------------------------------------+
+|top      |qa1    |7      |0      |7      |0      |1      |
++---------------------------------------------------------+

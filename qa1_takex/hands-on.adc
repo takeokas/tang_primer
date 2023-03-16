@@ -1,0 +1,46 @@
+set_pin_assignment {clock} { LOCATION = K14; }		##24MHZ
+##set_pin_assignment {RST_N} { LOCATION = K16; }		##USER_KEY
+
+## RGB LEDs on board, 3 pins
+#set_pin_assignment {RGB_LED[0]} { LOCATION = R3;  }	##LED_R, R3
+#set_pin_assignment {RGB_LED[1]} { LOCATION = J14;  }	##LED_G, J14
+#set_pin_assignment {RGB_LED[2]} { LOCATION = P13;  }	##LED_B, P13
+#
+##GPIO
+#set_pin_assignment {sssw1[0]} { LOCATION = B14; } ##B14_P, B14,ck_io[5]
+#set_pin_assignment {sssw1[1]} { LOCATION = A14; } ##B14_N, A14,ck_io[6]
+
+
+## Green LED
+set_pin_assignment {green_led[0]} { LOCATION = R7; } ##T11_P, R7, ck_io[25],LED4
+set_pin_assignment {green_led[1]} { LOCATION = T7; } ##T11_N, T7,ck_io[26],LED3
+set_pin_assignment {green_led[2]} { LOCATION = P5; }#T3_N, P5,ck_io[27],LED2
+set_pin_assignment {green_led[3]} { LOCATION = N5; } ##T3_P, N5, ck_io[28],LED1
+#
+# tact SW
+set_pin_assignment {push_button[0]} { LOCATION = R2; }	##R19_P, R2, ck_io[29],PB4
+set_pin_assignment {push_button[1]} { LOCATION = P2; }	##R19_N, P2,ck_io[30],PB3
+set_pin_assignment {push_button[2]} { LOCATION = A3; } ##B24_P, A3,ck_io[0],PB2
+set_pin_assignment {push_button[3]} { LOCATION = B10; } ##B10_P, B10,ck_io[4],PB1
+# toggle SW (Left 4)
+set_pin_assignment {toggle_switch[7]} { LOCATION = B14; } ##B14_P, B14,ck_io[5],TB1
+set_pin_assignment {toggle_switch[6]} { LOCATION = A14; } 	##B14_N, A14, {ck_io[6]}
+set_pin_assignment {toggle_switch[5]} { LOCATION = B15; } 	##B15_P, B15, {ck_io[7]}
+set_pin_assignment {toggle_switch[4]} { LOCATION = B16; } 	##B15_N, B16,ck_io[8]
+# toggle SW (right 4)
+set_pin_assignment {toggle_switch[3]}  { LOCATION = C16; }##B13_P,{ck_io[9]}
+set_pin_assignment {toggle_switch[2]} { LOCATION = C15; } ##B13_N, C15,{ck_io[10]}
+set_pin_assignment {toggle_switch[1]} { LOCATION = E16; } ##B1_P, E16, {ck_io[11]}
+set_pin_assignment {toggle_switch[0]}  { LOCATION = F16; } ##B1_N, F16, {ck_io[12]}
+# 7Seg LED
+set_pin_assignment {red_led[0]} { LOCATION = N12; }##T18_P, N12{ck_io[19]},7SEG-A
+set_pin_assignment {red_led[1]} { LOCATION = R16; }##T19_N, R16,{ck_io[18]},7SEG-B
+set_pin_assignment {red_led[2]} { LOCATION = L10; }##ACD2,L10,ck_io[22],7SEG-C
+set_pin_assignment {red_led[3]} { LOCATION = P11; }##T17_N, P11,{ck_io[23]},7SEG-D
+set_pin_assignment {red_led[4]} { LOCATION = M10; }##T17_P, M10,{ck_io[24]},7SEG-E
+set_pin_assignment {red_led[5]} { LOCATION = P12; }##T18_N, P12,{ck_io[20]},7SEG-F
+set_pin_assignment {red_led[6]} { LOCATION = N11; }##ADC0, N11,{ck_io[21]},7SEG-G
+
+
+## EOF
+

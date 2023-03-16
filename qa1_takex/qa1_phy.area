@@ -1,0 +1,71 @@
+standard
+***Report Model: qa1***
+
+IO Statistics
+#IO                        24
+  #input                   13
+  #output                  11
+  #inout                    0
+
+Utilization Statistics
+#lut                        7   out of  19600    0.04%
+#reg                        0   out of  19600    0.00%
+#le                         7
+  #lut only                 7   out of      7  100.00%
+  #reg only                 0   out of      7    0.00%
+  #lut&reg                  0   out of      7    0.00%
+#dsp                        1   out of     29    3.45%
+#bram                       0   out of     64    0.00%
+  #bram9k                   0
+  #fifo9k                   0
+#bram32k                    0   out of     16    0.00%
+#pad                       24   out of    188   12.77%
+  #ireg                     0
+  #oreg                     7
+  #treg                     0
+#pll                        0   out of      4    0.00%
+#gclk                       1   out of     16    6.25%
+
+
+Detailed IO Report
+
+        Name          Direction    Location    IOStandard    DriveStrength    PullType    PackReg  
+       clock            INPUT        K14        LVCMOS25          N/A          PULLUP      NONE    
+   push_button[3]       INPUT        B10        LVCMOS25          N/A          PULLUP      NONE    
+   push_button[2]       INPUT         A3        LVCMOS25          N/A          PULLUP      NONE    
+   push_button[1]       INPUT         P2        LVCMOS25          N/A          PULLUP      NONE    
+   push_button[0]       INPUT         R2        LVCMOS25          N/A          PULLUP      NONE    
+  toggle_switch[7]      INPUT        B14        LVCMOS25          N/A          PULLUP      NONE    
+  toggle_switch[6]      INPUT        A14        LVCMOS25          N/A          PULLUP      NONE    
+  toggle_switch[5]      INPUT        B15        LVCMOS25          N/A          PULLUP      NONE    
+  toggle_switch[4]      INPUT        B16        LVCMOS25          N/A          PULLUP      NONE    
+  toggle_switch[3]      INPUT        C16        LVCMOS25          N/A          PULLUP      NONE    
+  toggle_switch[2]      INPUT        C15        LVCMOS25          N/A          PULLUP      NONE    
+  toggle_switch[1]      INPUT        E16        LVCMOS25          N/A          PULLUP      NONE    
+  toggle_switch[0]      INPUT        F16        LVCMOS25          N/A          PULLUP      NONE    
+    green_led[3]       OUTPUT         N5        LVCMOS25           8            NONE       NONE    
+    green_led[2]       OUTPUT         P5        LVCMOS25           8            NONE       NONE    
+    green_led[1]       OUTPUT         T7        LVCMOS25           8            NONE       NONE    
+    green_led[0]       OUTPUT         R7        LVCMOS25           8            NONE       NONE    
+     red_led[6]        OUTPUT        N11        LVCMOS25           8            NONE       OREG    
+     red_led[5]        OUTPUT        P12        LVCMOS25           8            NONE       OREG    
+     red_led[4]        OUTPUT        M10        LVCMOS25           8            NONE       OREG    
+     red_led[3]        OUTPUT        P11        LVCMOS25           8            NONE       OREG    
+     red_led[2]        OUTPUT        L10        LVCMOS25           8            NONE       OREG    
+     red_led[1]        OUTPUT        R16        LVCMOS25           8            NONE       OREG    
+     red_led[0]        OUTPUT        N12        LVCMOS25           8            NONE       OREG    
+
+Report Hierarchy Area:
++----------------------------------------------------------------+
+|Instance |Module |le    |lut    |ripple |seq    |bram   |dsp    |
++----------------------------------------------------------------+
+|top      |qa1    |7     |7      |0      |7      |0      |1      |
++----------------------------------------------------------------+
+
+
+DataNet Average Fanout:
+
+   Index     Fanout    Nets  
+    #1         1        15   
+    #2        5-10      4    
+  Average     2.26           
